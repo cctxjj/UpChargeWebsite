@@ -1,0 +1,50 @@
+
+header{
+    text-align: center;
+    background-image: url("assets/backround_main.png");
+    background-color: black;
+    background-size: 100%;
+    align-content: stretch;
+}
+
+.main_text{
+    font-size: 150px;
+    font-family: San Francisco, Arial, serif;
+    color: whitesmoke;
+    font-feature-settings: normal;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.bottom_main_text{
+    font-size: 40px;
+    font-family: San Francisco, Arial, serif;
+    color: #b1ff8c;
+    font-feature-settings: normal;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 1%;
+
+
+}
+
+.leaf{
+    font-size: 50%;
+    align-content: unset;
+    position: fixed;
+}
+
+
+
+@font-face {
+    font-family: "San Francisco";
+    src: url("assets/fonts/._san_francisco-webfont.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "San Francisco";
+    src: url("assets/fonts/._san_francisco-webfont.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
