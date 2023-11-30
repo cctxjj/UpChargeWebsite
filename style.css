@@ -3,38 +3,125 @@ header{
     text-align: center;
     background-image: url("assets/backround_main.png");
     background-color: black;
-    background-size: 100%;
-    align-content: stretch;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    border-bottom-color: cadetblue;
+    border-bottom-style: ridge;
+    border-bottom-width: 20px;
 }
+
+.text_start{
+    padding-left: 30px;
+    text-align: center;
+}
+
 
 .main_text{
     font-size: 150px;
     font-family: San Francisco, Arial, serif;
     color: whitesmoke;
     font-feature-settings: normal;
-    text-align: center;
     font-weight: bolder;
 }
 
 .bottom_main_text{
-    font-size: 40px;
+    font-size: 50px;
     font-family: San Francisco, Arial, serif;
     color: #b1ff8c;
     font-feature-settings: normal;
-    text-align: left;
     font-weight: bold;
-    margin-bottom: 1%;
+    padding-left: 50px;
+}
 
+.first_paragraph{
 
 }
 
-.leaf{
-    font-size: 50%;
-    align-content: unset;
-    position: fixed;
+.black_left{
+    background: dimgrey;
+    width: 50%;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.white_right{
+    background: white;
+    width: 50%;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 
+.logo {
+    max-width: 10%;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    header{
+        text-align: center;
+        background-image: url("assets/backround_main_mobile.png");
+        background-color: black;
+        background-size: auto;
+        max-width: 500px;
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+
+    .text_start{
+        padding-left: 30px;
+        text-align: center;
+    }
+
+
+    .main_text{
+        font-size: 50px;
+        font-family: San Francisco, Arial, serif;
+        color: whitesmoke;
+        font-feature-settings: normal;
+        font-weight: bolder;
+    }
+
+    .bottom_main_text{
+        font-size: 30px;
+        font-family: San Francisco, Arial, serif;
+        color: #b1ff8c;
+        font-feature-settings: normal;
+        font-weight: bold;
+    }
+
+    .first_paragraph{
+
+    }
+
+    .black_left{
+        background: dimgrey;
+        width: 100%;
+        background-size: cover;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    .white_right{
+        background: white;
+        width: 100%;
+        background-size: cover;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+
+    .logo {
+        max-width: 10%;
+        height: auto;
+    }
+}
 
 @font-face {
     font-family: "San Francisco";
