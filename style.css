@@ -44,7 +44,7 @@ body {
     background: white;
     width: 50%;
     text-align: center;
-
+    z-index: 1;
 }
 
 .window_content {
@@ -53,11 +53,13 @@ body {
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 100px;
-    border-color: antiquewhite;
-    border-style: dashed;
+    border-color: ghostwhite;
+    border-style: solid;
+    border-radius: 200px;
     border-width: 50px;
     animation: blend-in;
     animation-duration: 4s;
+    z-index: 2;
 }
 
 .heading_info {
@@ -66,7 +68,6 @@ body {
     font-family: "Noto Sans", Arial Rounded MT, Serif, serif;
     font-style: normal;
     color: cadetblue;
-
 }
 
 
@@ -131,9 +132,53 @@ a span {
     width: 100%;
 }
 
+#grad_box {
+    padding-bottom: 400px;
+    width: 100%;
+    font-size: 0;
+    border: none;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(1,8,1,0.98) 0%, rgba(218,218,211,1) 54%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%);
+}
+#grad_box_invert {
+    padding-bottom: 100px;
+    width: 100%;
+    font-size: 0;
+    border: none;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 54%, rgba(218,218,211,1) 80%, rgba(1,8,1,0.98) 100%);
+}
+
+
+.blackbox{
+    background: rgba(1,8,1,0.98);
+}
+
+.product_name {
+    animation: none;
+    animation-duration: 0s;
+}
+
+.product_info {
+    color: white;
+}
+
+#black {
+    display: grid;
+    gap: 0;
+}
+
+.footer{
+    font-size: 20px;
+    background: white;
+    font-family: "Josefin Sans", serif;
+
+}
+
 
 
 @keyframes slide-right {
+
     from {
         margin-left: -1000px;
         opacity: 0;
@@ -143,6 +188,7 @@ a span {
         margin-left: 0;
         opacity: 100%;
     }
+
 }
 
 @keyframes blend-in {
