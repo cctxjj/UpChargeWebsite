@@ -51,7 +51,7 @@ body {
     background: ghostwhite;
     width: 50%;
     background-size: cover;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
     border-color: ghostwhite;
     border-style: solid;
@@ -62,12 +62,38 @@ body {
     z-index: 2;
 }
 
+.window_content_product {
+    background: ghostwhite;
+    width: 60%;
+    height: 85%;
+    padding-top: 30px;
+    border-color: ghostwhite;
+    border-style: solid;
+    border-radius: 200px;
+    border-width: 50px;
+    animation: blend-in-90;
+    animation-duration: 4s;
+    z-index: 2;
+    opacity: 90%;
+    border-bottom-width: 10px;
+}
+
 .heading_info {
     text-align: center;
     font-size: 70px;
     font-family: "Noto Sans", Arial Rounded MT, Serif, serif;
     font-style: normal;
     color: cadetblue;
+}
+
+.heading_info_product {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Noto Sans", Arial Rounded MT, Serif, serif;
+    font-style: normal;
+    color: cadetblue;
+    margin-top: -20px;
+    margin-bottom: 10px;
 }
 
 
@@ -77,6 +103,29 @@ body {
     font-family: "Josefin Sans", Arial Rounded MT, Serif, serif;
     font-style: normal;
     color: black;
+}
+
+.text_info_product {
+    text-align: left;
+    padding-left: 40px;
+    font-size: 24px;
+    font-family: "Josefin Sans", Arial Rounded MT, Serif, serif;
+    font-style: normal;
+    color: black;
+    margin-bottom: 60px;
+}
+
+#back_2{
+    color: white;
+}
+
+#wind_cont_3{
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+#wind_cont_2{
+    margin-left: 50px;
 }
 
 
@@ -93,6 +142,11 @@ body {
     font-weight: 500;
     z-index: 1;
 
+}
+
+#wind_cont_1{
+    margin-bottom: -30px;
+    height: 70%;
 }
 
 
@@ -170,8 +224,72 @@ a span {
 
 .footer{
     font-size: 20px;
-    background: white;
+
     font-family: "Josefin Sans", serif;
+}
+
+#product_background_1{
+    background-image: url("assets/imgs/backround/background_prod_1.png");
+    display: grid;
+    gap: 0;
+}
+
+#product_background_2{
+    background-image: url("assets/imgs/backround/background_prod_2.png");
+    display: grid;
+    gap: 0;
+}
+
+#product_background_3{
+    background-image: url("assets/imgs/backround/background_prod_3.png");
+    display: grid;
+    gap: 0;
+}
+
+.back{
+    font-size: 30px;
+    font-family: "Josefin Sans", serif;
+    padding-top: 30px;
+    color: black;
+    padding-left: 30px;
+
+}
+
+.header_product{
+    width: 100%;
+    font-size: 120px;
+    font-family: "Noto Sans", serif;
+    color: black;
+    font-weight: bolder;
+    font-style: normal;
+    text-align: right;
+    animation: slide-right-mid;
+    animation-duration: 7s;
+    margin-bottom: -50px;
+    margin-left: -60px;
+}
+
+.price_product{
+    width: 100%;
+    font-size: 60px;
+    font-family: "Noto Sans", serif;
+    color: antiquewhite;
+    font-weight: bolder;
+    font-style: normal;
+    text-align: right;
+    animation: blend-in;
+    animation-duration: 10s;
+    margin-left: -60px;
+}
+
+.placeholder{
+    width: 30%;
+    padding-bottom: 50%;
+}
+
+.product_info_backround{
+    display: flex;
+    padding-bottom: -100px;
 
 }
 
@@ -181,6 +299,33 @@ a span {
 
     from {
         margin-left: -1000px;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: -60px;
+        opacity: 100%;
+    }
+
+}
+@keyframes slide-right-mid {
+
+    from {
+        margin-left: -400px;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: -60px;
+        opacity: 100%;
+    }
+
+}
+
+@keyframes slide-left {
+
+    from {
+        margin-left: 100px;
         opacity: 0;
     }
 
@@ -200,6 +345,16 @@ a span {
         opacity: 100%;
     }
 }
+@keyframes blend-in-90 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 90%;
+    }
+}
+
 
 
 @media only screen and (max-width: 500px) {
