@@ -209,6 +209,7 @@ a span {
         background-image: url("assets/imgs/backround/backround_main_mobile.png");
         background-color: black;
         background-size: auto;
+        background-repeat: no-repeat;
         max-width: 500px;
         height: auto;
         padding-top: 100px;
@@ -220,9 +221,39 @@ a span {
         text-align: center;
     }
 
+    #navbar {
+        scale: 0.65;
+    }
+
+    .product_name {
+        text-align: center;
+        padding: 32px;
+    }
+
+    .heading_info {
+        font-size: 32px;
+    }
+
+    .paragraph {
+        scale: 1;
+        font-size: small;
+    }
+
+    .window_image {
+        
+    }
+
+    .text_info {
+        font-size: 24px;
+    }
+
+    .footer {
+        scale: 0.9;
+        margin-bottom: 8px;
+    }
 
     .main_text{
-        font-size: 50px;
+        font-size: 32px;
         font-family: San Francisco, Arial, serif;
         color: whitesmoke;
         font-feature-settings: normal;
