@@ -209,6 +209,7 @@ a span {
 }
 
 .product_name {
+    color: beige;
     animation: none;
     animation-duration: 0s;
 }
@@ -259,7 +260,7 @@ a span {
     width: 100%;
     font-size: 120px;
     font-family: "Noto Sans", serif;
-    color: black;
+    color: beige;
     font-weight: bolder;
     font-style: normal;
     text-align: right;
@@ -483,11 +484,11 @@ a span {
 
     #wind_cont_3{
         margin-bottom: 30px;
-        margin-left: 50px;
+        margin-left: -20px;
     }
 
     #wind_cont_2{
-        margin-left: 50px;
+        width:55%
     }
 
 
@@ -507,8 +508,8 @@ a span {
     }
 
     #wind_cont_1{
-        margin-bottom: -20px;
-        height: 80%;
+        height: 85%;
+        width: 60%;
     }
 
 
@@ -623,7 +624,7 @@ a span {
         width: 100%;
         font-size: 30px;
         font-family: "Noto Sans", serif;
-        color: white;
+        color: beige;
         font-weight: bolder;
         font-style: normal;
         text-align: right;
@@ -652,24 +653,20 @@ a span {
     }
 
     .product_info_backround{
-        display: flex;
         padding-bottom: -100px;
 
     }
 
     #prod2back {
-        margin-left: -50px;
-        width: 100%;
+        align-content: center;
     }
 
     #prod3back {
-        margin-left: -50px;
-        width: 100%;
+        align-content: center;
     }
 
     #prod1back {
-        margin-left: -10px;
-        width: 100%;
+        align-content: center;
     }
 
     #price_3 {
